@@ -502,6 +502,10 @@ header {
     justify-content: center;
     align-items: center;
     gap: 40px;
+    margin-bottom: 2rem;
+    img {
+
+    }
 }
 .contents-wrapper:nth-child(odd) {
     flex-direction: row-reverse;
@@ -509,9 +513,12 @@ header {
 
 .contents-text {
     h3 {
+        color: #000;
         font-size: clamp(1.2rem, 4vw, 1.4rem);
         font-weight: 600;
         margin-bottom: 0.5rem;
+        background: linear-gradient(transparent 70%, var(--secondary) 30%);
+        display: inline-block;
     }
     p {
 
@@ -528,9 +535,7 @@ header {
     }
 
     .contents-text {
-        h3 {
-            text-align: center;
-        }
+        text-align: center;
     }
 }
 
@@ -539,7 +544,6 @@ header {
 .on-visit-section {
  background-color: var(--bg-gray);   
 }
-
 /* footer ------------------- */
 
 .top-footer {
