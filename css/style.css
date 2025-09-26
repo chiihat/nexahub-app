@@ -110,7 +110,6 @@ header {
     transition-duration: 300ms;
     transform: translateX(200%);
     overflow: auto;
-    /* ナビメニューの背景色を変えたい時 */
     background-color: rgba(0, 0, 0, .6);
     }
 
@@ -142,7 +141,6 @@ header {
 
 @media (max-width: 1024px) {
     .menu-item {
-    /* 各ナビメニューの下線を変えたい時 */
     border-style: solid;
     border-color: #fff;
     border-bottom-width: 1px;
@@ -170,7 +168,6 @@ header {
     padding-top: clamp(10px, 2.6666666666666665vw, 20px);
     padding-bottom: clamp(10px, 2.6666666666666665vw, 20px);
     text-align: center;
-    /* ナビメニューの文字色を変えたい時 */
     color: #000;
     }
 }
@@ -298,17 +295,16 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 40px;
-    /* width: min(1000px, 90%); */
+    /* gap: 40px; */
 }
 
 .mv-text {
     text-align: left;
-    flex: 0 0 70%;
+    flex: 0 0 50%;
 }
 
 .mv-image {
-    flex: 0 0 30%;
+    flex: 0 0 50%;
 }
 
 .mv-text h1,
@@ -382,7 +378,7 @@ header {
 /* cta --------------- */
 
 .title {
-    font-size: clamp(1.2rem, 4vw, 1.6rem);
+    font-size: clamp(1.4rem, 4vw, 2rem);
     font-weight: 700;
     color: #000;
 }
@@ -485,7 +481,6 @@ header {
     h2 {
         font-size: clamp(1.4rem, 4vw, 2rem);
         font-weight: 700;
-        /* margin-bottom: 1rem; */
     }
     p {
         display: flex;
@@ -571,5 +566,19 @@ header {
         font-size: 10px;
         color: #fff;
         opacity: .3;
+    }
+}
+
+
+
+/* ----------- */
+
+.sp-only {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .sp-only {
+        display: block;
     }
 }
